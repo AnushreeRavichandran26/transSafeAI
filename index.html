@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TransSafe AI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0f1117;
+      color: #e2e8f0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+    }
+
+    .header {
+      text-align: center;
+      margin-bottom: 52px;
+    }
+
+    .header h1 {
+      font-size: 2.8rem;
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: #fff;
+      margin-bottom: 10px;
+    }
+
+    .header h1 span {
+      background: linear-gradient(90deg, #38bdf8, #818cf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    .header p {
+      font-size: 1rem;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .btn {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      padding: 20px 24px;
+      border-radius: 14px;
+      text-decoration: none;
+      background: #1a1f2e;
+      border: 1px solid #2d3748;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #1e2538;
+      transform: translateX(4px);
+    }
+
+    .btn-icon {
+      font-size: 1.6rem;
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .btn-road   { border-left: 3px solid #f59e0b; }
+    .btn-road   .btn-icon { background: rgba(245,158,11,0.12); }
+    .btn-road:hover { border-color: #f59e0b; }
+
+    .btn-sea    { border-left: 3px solid #22d3ee; }
+    .btn-sea    .btn-icon { background: rgba(34,211,238,0.12); }
+    .btn-sea:hover { border-color: #22d3ee; }
+
+    .btn-air    { border-left: 3px solid #818cf8; }
+    .btn-air    .btn-icon { background: rgba(129,140,248,0.12); }
+    .btn-air:hover { border-color: #818cf8; }
+
+    .btn-space  { border-left: 3px solid #34d399; }
+    .btn-space  .btn-icon { background: rgba(52,211,153,0.12); }
+    .btn-space:hover { border-color: #34d399; }
+
+    .btn-text { flex: 1; }
+
+    .btn-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      margin-bottom: 3px;
+    }
+
+    .btn-desc {
+      font-size: 0.8rem;
+      color: #64748b;
+      font-weight: 400;
+    }
+
+    .btn-arrow {
+      font-size: 1rem;
+      color: #334155;
+      transition: color 0.2s;
+    }
+    .btn:hover .btn-arrow { color: #94a3b8; }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <h1>TransSafe <span>AI</span></h1>
+    <p>AI-powered safety intelligence across land, sea, air and space.</p>
+  </div>
+
+  <div class="buttons">
+
+    <a class="btn btn-road" href="https://anushreeravichandran26-road-anomaly-detecti-dashboardapp-kvy38m.streamlit.app/" target="_blank" rel="noopener">
+      <div class="btn-icon">🚗</div>
+      <div class="btn-text">
+        <div class="btn-name">Road Anomaly Detection</div>
+        <div class="btn-desc">Spot cracks and potholes in road footage and assess maintenance risk.</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+    <a class="btn btn-sea" href="https://maritime-dashboard.streamlit.app/" target="_blank" rel="noopener">
+      <div class="btn-icon">🚢</div>
+      <div class="btn-text">
+        <div class="btn-name">Maritime Vessel Tracking</div>
+        <div class="btn-desc">Predict ship trajectories and flag collision risks in busy sea lanes.</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+    <a class="btn btn-air" href="https://air-domain-js72zbsfkia2uhct3f5eos.streamlit.app/" target="_blank" rel="noopener">
+      <div class="btn-icon">✈️</div>
+      <div class="btn-text">
+        <div class="btn-name">Air Transportation Intelligence</div>
+        <div class="btn-desc">Forecast flight delays and estimate the fuel and emissions impact.</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+    <a class="btn btn-space" href="https://space-module-teal.vercel.app/" target="_blank" rel="noopener">
+      <div class="btn-icon">🛰️</div>
+      <div class="btn-text">
+        <div class="btn-name">Space Debris Risk Assessment</div>
+        <div class="btn-desc">Classify orbital objects and visualise debris fields around Earth.</div>
+      </div>
+      <div class="btn-arrow">→</div>
+    </a>
+
+  </div>
+
+</body>
+</html>
